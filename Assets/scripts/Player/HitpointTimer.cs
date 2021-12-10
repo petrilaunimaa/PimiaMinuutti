@@ -5,7 +5,9 @@ using UnityEngine;
 public class HitpointTimer : MonoBehaviour {
 
     public float time = 60f;
-    public bool active = true;
+    public bool active = false;
+
+    public int playerIndex = 0;
     
     void Update() {
         if (active) {
