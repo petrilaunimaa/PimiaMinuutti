@@ -23,6 +23,9 @@
 .vs/
 .vsconfig
 
+#MacOS default files
+.DS_Store
+
 # Gradle cache directory
 .gradle/
 
