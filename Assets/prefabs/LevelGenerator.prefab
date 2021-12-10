@@ -49,6 +49,7 @@ MonoBehaviour:
   walls:
   - {fileID: 6337151419665783886, guid: 191e3d15beed64863b01f93db78271b2, type: 3}
   - {fileID: 8237898501330067115, guid: b95b656e65d7c47fb9952367ec637d14, type: 3}
+  - {fileID: 477022669364665959, guid: dfdaa5ff087574203b0313540eda1022, type: 3}
   decorations: []
 --- !u!1 &1833271310046678851
 GameObject:
@@ -100,3 +101,4 @@ MonoBehaviour:
   boundMaxX: 9
   boundMinY: -5
   boundMaxY: 5
+  spawnPositions: []
