@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Wall : MonoBehaviour {
 
-    public Rigidbody2D rb;
-    public Collider2D col;
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Collider2D col;
 
     void Start() {
         
