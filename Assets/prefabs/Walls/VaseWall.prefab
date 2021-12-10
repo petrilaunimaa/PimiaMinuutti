@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2818747231623914655}
   - component: {fileID: 6337151419665783886}
   - component: {fileID: 3413538922300514616}
+  - component: {fileID: -6733414594082014304}
   m_Layer: 0
   m_Name: VaseWall
   m_TagString: Untagged
@@ -115,7 +116,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.032, y: 0.016}
+    oldSize: {x: 1.28, y: 0.64}
     newSize: {x: 0.32, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -124,3 +125,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.02347992, y: 0.008591234}
   m_EdgeRadius: 0
+--- !u!50 &-6733414594082014304
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7220752027008160073}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
