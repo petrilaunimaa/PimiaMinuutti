@@ -894,6 +894,10 @@ PrefabInstance:
       propertyPath: wallCountMin
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1833271309705202944, guid: cc9067a1ee00346c4bd12b74c639129c, type: 3}
+      propertyPath: floorSpritePrefab
+      value: 
+      objectReference: {fileID: 7051512306697001603, guid: 0e177e06109774bc790494b4dcaa61da, type: 3}
     - target: {fileID: 1833271310046678851, guid: cc9067a1ee00346c4bd12b74c639129c, type: 3}
       propertyPath: m_Name
       value: LevelGenerator

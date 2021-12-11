@@ -22,6 +22,8 @@ public class LevelGenerator : MonoBehaviour {
         int wallCount = Random.Range(currentLevel.wallCountMin, currentLevel.wallCountMax+1);
         InitializeUnusedPositions();
 
+        Instantiate<GameObject>(currentLevel.floorSpritePrefab, null);
+
         for (int i=0; i<wallCount; ++i) {
             Wall wallPrefab = currentLevel.walls[Random.Range(0, currentLevel.walls.Count)];
             int positionIndex = Random.Range(0, unusedPositions.Count);

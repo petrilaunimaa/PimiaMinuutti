@@ -12,6 +12,7 @@ public class LevelAssetList : MonoBehaviour {
     public List<Wall> walls;
     public List<GameObject> decorations;
 
+    public GameObject floorSpritePrefab;
 
 
 }
