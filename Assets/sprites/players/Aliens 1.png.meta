@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 614d0c940ba3e46fb863ecd90cc92ac4
+guid: 4590a4950d4ff4e32b2628b136f96c28
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3875910722362749109
-    second: Aliens_0
+      213: -1921533616020197769
+    second: Aliens 1_0
   - first:
-      213: 5911024126716800237
-    second: Aliens_1
+      213: 4383490620233783359
+    second: Aliens 1_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Aliens_0
+      name: Aliens 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -105,20 +105,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b03f8b34400ac530800000000000000
-      internalID: 3875910722362749109
+      spriteID: 77ee4216b575555e0800000000000000
+      internalID: -1921533616020197769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Aliens_1
+      name: Aliens 1_1
       rect:
         serializedVersion: 2
         x: 512
@@ -126,14 +126,14 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dece7b3102d280250800000000000000
-      internalID: 5911024126716800237
+      spriteID: f389a4f8e7945dc30800000000000000
+      internalID: 4383490620233783359
       vertices: []
       indices: 
       edges: []

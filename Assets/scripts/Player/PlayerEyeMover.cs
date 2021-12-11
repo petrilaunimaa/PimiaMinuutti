@@ -13,7 +13,7 @@ public class PlayerEyeMover : MonoBehaviour {
     }
 
     void Update() {
-        Vector2 translation = Vector2.up * Mathf.Sin(Time.time * 2) * 0.02f;
+        Vector2 translation = Vector2.right * Mathf.Sin(Time.time * 2) * 0.02f;
         eyeSprite.transform.localPosition = originalPosition + translation;
     }
 }
