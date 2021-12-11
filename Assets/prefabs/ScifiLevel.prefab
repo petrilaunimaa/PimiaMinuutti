@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6090472183087633385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6090472183087633391}
+  - component: {fileID: 6090472183087633390}
+  m_Layer: 0
+  m_Name: ScifiLevel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6090472183087633391
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6090472183087633385}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0030732339, y: 0.0019199662, z: -0.0004351454}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6090472183087633390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6090472183087633385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76515a046f7c84a5b9e19c66af8ab3be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Level
+  wallCountMin: 5
+  wallCountMax: 6
+  decorCountMin: 2
+  decorCountMax: 3
+  walls:
+  - {fileID: 2378479444977469330, guid: 059b64736719b4313bbe217c5179715f, type: 3}
+  decorations:
+  - {fileID: 6134967240724221979, guid: d6d21f208ff074a87985c5d61a5b24c4, type: 3}
+  - {fileID: 4980822027433133404, guid: 437939baa4f874e04bfb3ea0e5bdf2b6, type: 3}
+  - {fileID: 349704053631036559, guid: 678307691d23741e68235caa9cf9dc64, type: 3}
+  - {fileID: 4438848599488242126, guid: 139b9d4376bcd4841a7b78d8a4877d5b, type: 3}
+  - {fileID: 3961862875514224087, guid: de7525bcf1a624a1089eca8b3e2bd8a5, type: 3}
+  floorSpritePrefab: {fileID: 2904945813177848211, guid: e30c7f95710de4d2885b5186a36eded7, type: 3}
