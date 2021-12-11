@@ -34,32 +34,28 @@ public class PlayerScript : MonoBehaviour
     // Update
     void Update()
     {
-        if (playerid == 1)
-        {
-            float horInput = Input.GetAxis("WASDHorizontal");
-            float verInput = Input.GetAxis("WASDVertical");
-            if (horInput != 0 || verInput != 0)
-            {
-                Movement(horInput, verInput);
+        if (gameState.state == GameStateManager.GameState.ongoing) {
+            if (playerid == 1) {
+                float horInput = Input.GetAxis("WASDHorizontal");
+                float verInput = Input.GetAxis("WASDVertical");
+                if (horInput != 0 || verInput != 0) {
+                    Movement(horInput, verInput);
+                }
+                if (Input.GetKeyDown("e")) {
+                    shoot();
+                }
             }
-            if (Input.GetKeyDown("e"))
-            {
-                shoot();
-            }
-        }
-        if (playerid == 2)
-        {
-            float horInput = Input.GetAxis("ArrowHorizontal");
-            float verInput = Input.GetAxis("ArrowVertical");
-            if (horInput != 0 || verInput != 0)
-            {
-                Movement(horInput, verInput);
-            }
-            if (Input.GetKeyDown("-"))
-            {
-                shoot();
-            }
+            if (playerid == 2) {
+                float horInput = Input.GetAxis("ArrowHorizontal");
+                float verInput = Input.GetAxis("ArrowVertical");
+                if (horInput != 0 || verInput != 0) {
+                    Movement(horInput, verInput);
+                }
+                if (Input.GetKeyDown("-")) {
+                    shoot();
+                }
 
+            }
         }
 
     }
