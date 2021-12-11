@@ -42,6 +42,9 @@ public class LevelGenerator : MonoBehaviour {
             decor.transform.position = position;
         }
 
+        GameObject centerObject = Instantiate(currentLevel.centerObject, null);
+        centerObject.transform.position = Vector3.zero;
+
     }
 
     void InitializeUnusedPositions() {

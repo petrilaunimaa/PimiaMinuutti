@@ -44,14 +44,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   title: Level
-  wallCountMin: 4
-  wallCountMax: 9
+  wallCountMin: 3
+  wallCountMax: 7
   decorCountMin: 5
   decorCountMax: 12
+  centerObject: {fileID: 8336395293952094549, guid: 8dcd2f09b2ed4401b809dc8c0d114fb3, type: 3}
   walls:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 3844367101804434272, guid: dfdaa5ff087574203b0313540eda1022, type: 3}
+  - {fileID: 6150963073182315888, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+  - {fileID: 505839943248705377, guid: 7cd0f920f2cf943c89b33a75f11518d7, type: 3}
   decorations:
   - {fileID: 6134967240724221979, guid: d6d21f208ff074a87985c5d61a5b24c4, type: 3}
   - {fileID: 4980822027433133404, guid: 437939baa4f874e04bfb3ea0e5bdf2b6, type: 3}

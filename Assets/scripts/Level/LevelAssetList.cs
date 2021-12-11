@@ -12,6 +12,8 @@ public class LevelAssetList : MonoBehaviour {
     public int decorCountMin;
     public int decorCountMax;
 
+    public GameObject centerObject;
+
     public List<GameObject> walls;
     public List<GameObject> decorations;
 
