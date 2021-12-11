@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2128452686672197069}
   - component: {fileID: 4016232464564442450}
   - component: {fileID: 308785901367586147}
-  - component: {fileID: 7450654464543273895}
   - component: {fileID: 6817233445523801779}
+  - component: {fileID: 3651350943805240483}
   m_Layer: 0
   m_Name: WildWestStool2
   m_TagString: Untagged
@@ -99,32 +99,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   col: {fileID: 0}
---- !u!61 &7450654464543273895
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 505839943248705377}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.04228261, y: 0.03438568}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.56}
-    newSize: {x: 0.32, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.82635134, y: 1.4119916}
-  m_EdgeRadius: 0
 --- !u!50 &6817233445523801779
 Rigidbody2D:
   serializedVersion: 4
@@ -146,3 +120,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!70 &3651350943805240483
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505839943248705377}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.017160237, y: -0.06699067}
+  m_Size: {x: 0.6723691, y: 1.7334}
+  m_Direction: 0
