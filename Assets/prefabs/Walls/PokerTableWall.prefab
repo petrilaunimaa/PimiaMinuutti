@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2900006696333633519}
   - component: {fileID: 8535059722776061622}
   - component: {fileID: 477022669364665959}
-  - component: {fileID: 9093893155500172049}
   - component: {fileID: -3655090060245494593}
+  - component: {fileID: 6267762012876928473}
   m_Layer: 0
   m_Name: PokerTableWall
   m_TagString: Untagged
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: -1588106067
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 10437e1f9244743d49e3ef6cecdc7ef2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b9808c8bc3da8496c8ad817c331e1451, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,32 +99,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   col: {fileID: 0}
---- !u!61 &9093893155500172049
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3844367101804434272}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.000926096, y: 0.0001852191}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 0.32, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.02347992, y: 0.008591234}
-  m_EdgeRadius: 0
 --- !u!50 &-3655090060245494593
 Rigidbody2D:
   serializedVersion: 4
@@ -146,3 +120,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!58 &6267762012876928473
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3844367101804434272}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0050764084, y: 0.11148119}
+  serializedVersion: 2
+  m_Radius: 1.1228304
