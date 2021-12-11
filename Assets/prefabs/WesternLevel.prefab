@@ -46,9 +46,16 @@ MonoBehaviour:
   title: Level
   wallCountMin: 4
   wallCountMax: 9
+  decorCountMin: 5
+  decorCountMax: 12
   walls:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  decorations: []
+  decorations:
+  - {fileID: 6134967240724221979, guid: d6d21f208ff074a87985c5d61a5b24c4, type: 3}
+  - {fileID: 4980822027433133404, guid: 437939baa4f874e04bfb3ea0e5bdf2b6, type: 3}
+  - {fileID: 349704053631036559, guid: 678307691d23741e68235caa9cf9dc64, type: 3}
+  - {fileID: 4438848599488242126, guid: 139b9d4376bcd4841a7b78d8a4877d5b, type: 3}
+  - {fileID: 3961862875514224087, guid: de7525bcf1a624a1089eca8b3e2bd8a5, type: 3}
   floorSpritePrefab: {fileID: 7051512306697001603, guid: 0e177e06109774bc790494b4dcaa61da, type: 3}

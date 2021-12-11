@@ -33,6 +33,15 @@ public class LevelGenerator : MonoBehaviour {
             unusedPositions.RemoveAt(positionIndex);
         }
 
+        int decorCount = Random.Range(currentLevel.decorCountMin, currentLevel.decorCountMax+1);
+
+        for (int i=0; i<decorCount; ++i) {
+            GameObject decorPrefab = currentLevel.decorations[Random.Range(0, currentLevel.decorations.Count)];
+            Vector3 position = new Vector3(Random.Range(boundMinX, boundMaxX), Random.Range(boundMinY, boundMaxY));
+            GameObject decor = Instantiate<GameObject>(decorPrefab, null);
+            decor.transform.position = position;
+        }
+
     }
 
     void InitializeUnusedPositions() {
