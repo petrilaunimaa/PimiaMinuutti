@@ -520,6 +520,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8503512315860893485, guid: cc9067a1ee00346c4bd12b74c639129c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.44
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc9067a1ee00346c4bd12b74c639129c, type: 3}
 --- !u!1 &1433676084 stripped
@@ -622,13 +626,25 @@ PrefabInstance:
       propertyPath: camerashakeOBJ
       value: 
       objectReference: {fileID: 80393767}
+    - target: {fileID: 3443248748257484482, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: m_Color.b
+      value: 0.54191923
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443248748257484482, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443248748257484482, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7613399653538995534, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7613399653538995534, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 7613399653538995534, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: m_LocalPosition.y
@@ -834,13 +850,25 @@ PrefabInstance:
       propertyPath: shootingsounds.Array.data[3]
       value: 
       objectReference: {fileID: 8300000, guid: 060313eb83cefb54fb997a30324059fe, type: 3}
+    - target: {fileID: 3443248748257484482, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443248748257484482, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: m_Color.g
+      value: 0.039602082
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443248748257484482, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7613399653538995534, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7613399653538995534, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7613399653538995534, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: m_LocalPosition.y
@@ -852,7 +880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7613399653538995534, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7613399653538995534, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: m_LocalRotation.x
@@ -864,7 +892,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7613399653538995534, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7613399653538995534, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -876,7 +904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7613399653538995534, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 029ab70039da345588333e06362f7986, type: 3}
@@ -944,6 +972,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1310966232}
     m_Modifications:
+    - target: {fileID: 7335182944062384971, guid: 40dfa25569e9a4287af5bc8633c6878b, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7335182944062385076, guid: 40dfa25569e9a4287af5bc8633c6878b, type: 3}
       propertyPath: m_Name
       value: ScifiUICanvas

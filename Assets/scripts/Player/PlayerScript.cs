@@ -26,7 +26,7 @@ public class PlayerScript : MonoBehaviour
 
         float rotationZ = Mathf.Atan2(heading.y, heading.x) * Mathf.Rad2Deg;
         Quaternion targetedRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
-        transform.rotation = Quaternion.Lerp(transform.rotation, targetedRotation, 25.0f * Time.deltaTime);
+        transform.rotation = Quaternion.Lerp(transform.rotation, targetedRotation, 20.0f * Time.deltaTime);
     }
 
     // Update
@@ -74,6 +74,7 @@ public class PlayerScript : MonoBehaviour
         //spawnedBullet.GetComponent<Rigidbody2D>().AddForce((heading) * 9000, ForceMode2D.Impulse);
         Debug.Log(transform.right);
         spawnedBullet.GetComponent<Rigidbody2D>().AddForce((transform.right) / 10, ForceMode2D.Force);
+        spawnedBullet.GetComponent<SpriteRenderer>().color = gameObject.GetComponent<SpriteRenderer>().color;
 
     }
 
