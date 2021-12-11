@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8657061666602651524}
   m_Layer: 0
   m_Name: Card4
-  m_TagString: Untagged
+  m_TagString: decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

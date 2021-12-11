@@ -6,7 +6,8 @@ public class bulletscript : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("osuma");
-        Destroy(gameObject);
+        if (collision.gameObject.tag != "decor") {
+            Destroy(gameObject);
+        }
     }
 }

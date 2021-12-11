@@ -13,6 +13,8 @@ public class PlayerScript : MonoBehaviour
     public AudioClip[] shootingsounds;
     public GameObject gunpoint;
 
+    public Color bulletColor;
+
     public GameStateManager gameState;
     public SpriteRenderer sr;
 
@@ -102,7 +104,7 @@ public class PlayerScript : MonoBehaviour
             //spawnedBullet.GetComponent<Rigidbody2D>().AddForce((heading) * 9000, ForceMode2D.Impulse);
             Debug.Log(transform.right);
             spawnedBullet.GetComponent<Rigidbody2D>().AddForce((transform.right) / 10, ForceMode2D.Force);
-            spawnedBullet.GetComponent<SpriteRenderer>().color = gameObject.GetComponent<SpriteRenderer>().color;
+            spawnedBullet.GetComponent<SpriteRenderer>().color = new Color(bulletColor.r, bulletColor.g, bulletColor.b, 1);
         }
     }
 
