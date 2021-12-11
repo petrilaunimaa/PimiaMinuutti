@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameStateManager : MonoBehaviour {
     private HitpointTimer player1Timer;
@@ -9,6 +10,8 @@ public class GameStateManager : MonoBehaviour {
     public GameState state;
 
     [SerializeField] private AudioSource audiosource;
+
+    private float escapePressedTime = 0;
 
     public int winnerPlayerIndex = -1;
 
@@ -39,7 +42,17 @@ public class GameStateManager : MonoBehaviour {
         }
 
         if (Input.GetKeyDown(KeyCode.Escape)) {
+            escapePressedTime = 0;
+        } else if (Input.GetKey(KeyCode.Escape)) {
+            escapePressedTime += Time.deltaTime;
+            if (escapePressedTime > 2f) {
+                Application.Quit();
+            }
+        }
 
+        if (state == GameState.ended && Input.GetKeyUp(KeyCode.Return)) {
+            Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(scene.name);
         }
 
     }
