@@ -7,9 +7,13 @@ public class GameStateManager : MonoBehaviour {
     private HitpointTimer player1Timer;
     private HitpointTimer player2Timer;
 
+    [SerializeField] ParticleSystem player1Particles;
+    [SerializeField] ParticleSystem player2Particles;
+
     public GameState state;
 
     [SerializeField] private AudioSource audiosource;
+    [SerializeField] private AudioSource zapAudio;
 
     private float escapePressedTime = 0;
 
@@ -26,6 +30,9 @@ public class GameStateManager : MonoBehaviour {
         player2Timer = timers[1];
 
         state = GameState.starting;
+
+        player1Particles.Stop();
+        player2Particles.Stop();
 
         Invoke("BeginGame", 2);
     }
@@ -61,6 +68,18 @@ public class GameStateManager : MonoBehaviour {
     public void swapTimerToPlayerIndex(int playerIndex) {
         player1Timer.active = playerIndex == 1;
         player2Timer.active = playerIndex == 2;
+
+        if (playerIndex == 1) {
+            if (player1Particles.isPlaying == false) {
+                player1Particles.Play();
+                zapAudio.Play();
+            }
+        } else if (playerIndex == 2) {
+            if (player2Particles.isPlaying == false) {
+                player2Particles.Play();
+                zapAudio.Play();
+            }
+        }
     }
 
     public int ActivePlayerIndex() {
