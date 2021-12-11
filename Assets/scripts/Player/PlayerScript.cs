@@ -13,6 +13,8 @@ public class PlayerScript : MonoBehaviour
     public AudioClip[] shootingsounds;
     public GameObject gunpoint;
 
+    public GameStateManager gameState;
+
 
     // Movement force
     void Movement(float horInput, float verInput)
@@ -83,8 +85,10 @@ public class PlayerScript : MonoBehaviour
         StartCoroutine(camerashakeOBJ.CameraShake(magnitude));
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        shake(0.05f);
+    private void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.tag == "bullet") {
+            shake(0.05f);
+            gameState.swapTimerToPlayerIndex(playerid);
+        }
     }
 }

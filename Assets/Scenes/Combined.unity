@@ -714,6 +714,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5363451272634080101, guid: cc9067a1ee00346c4bd12b74c639129c, type: 3}
   m_PrefabInstance: {fileID: 1433676083}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1471771298 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7370076191830194942, guid: cb6350197a6cb4515aba18993795591b, type: 3}
+  m_PrefabInstance: {fileID: 1916652808}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4041944ccd1444aa1ee2d891c3bdd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1489491402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -725,6 +736,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player1
       objectReference: {fileID: 0}
+    - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: gameState
+      value: 
+      objectReference: {fileID: 1471771298}
     - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: camerashakeOBJ
       value: 
@@ -797,6 +812,10 @@ PrefabInstance:
     - target: {fileID: 342167762882522460, guid: 5949e99d2b19d4d81ad0d06eac3b107c, type: 3}
       propertyPath: m_Name
       value: HitpointtimerP1
+      objectReference: {fileID: 0}
+    - target: {fileID: 342167762882522461, guid: 5949e99d2b19d4d81ad0d06eac3b107c, type: 3}
+      propertyPath: active
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 342167762882522461, guid: 5949e99d2b19d4d81ad0d06eac3b107c, type: 3}
       propertyPath: playerIndex
@@ -987,6 +1006,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: gameState
+      value: 
+      objectReference: {fileID: 1471771298}
+    - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: camerashakeOBJ
       value: 
       objectReference: {fileID: 80393767}
@@ -1077,7 +1100,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 342167762882522460, guid: 5949e99d2b19d4d81ad0d06eac3b107c, type: 3}
       propertyPath: m_Name
-      value: HitpointtimerP0
+      value: HitpointtimerP2
+      objectReference: {fileID: 0}
+    - target: {fileID: 342167762882522461, guid: 5949e99d2b19d4d81ad0d06eac3b107c, type: 3}
+      propertyPath: active
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 342167762882522461, guid: 5949e99d2b19d4d81ad0d06eac3b107c, type: 3}
+      propertyPath: playerIndex
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 342167762882522462, guid: 5949e99d2b19d4d81ad0d06eac3b107c, type: 3}
       propertyPath: m_RootOrder
@@ -1132,6 +1163,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1310966232}
     m_Modifications:
+    - target: {fileID: 3914125092740282478, guid: 40dfa25569e9a4287af5bc8633c6878b, type: 3}
+      propertyPath: m_Name
+      value: Player2TimerBackgroundNumbers
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633208541621825814, guid: 40dfa25569e9a4287af5bc8633c6878b, type: 3}
+      propertyPath: m_Name
+      value: Player1TimerBackgroundNumbers (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335182943452631202, guid: 40dfa25569e9a4287af5bc8633c6878b, type: 3}
+      propertyPath: playerIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335182943452631212, guid: 40dfa25569e9a4287af5bc8633c6878b, type: 3}
+      propertyPath: m_Name
+      value: Player1Timer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335182943866535729, guid: 40dfa25569e9a4287af5bc8633c6878b, type: 3}
+      propertyPath: m_Name
+      value: Player2Timer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335182943866535735, guid: 40dfa25569e9a4287af5bc8633c6878b, type: 3}
+      propertyPath: playerIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7335182944062384971, guid: 40dfa25569e9a4287af5bc8633c6878b, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 0

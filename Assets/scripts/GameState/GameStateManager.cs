@@ -37,4 +37,10 @@ public class GameStateManager : MonoBehaviour {
         }
 
     }
+
+
+    public void swapTimerToPlayerIndex(int playerIndex) {
+        player1Timer.active = playerIndex == 1;
+        player2Timer.active = playerIndex == 2;
+    }
 }
