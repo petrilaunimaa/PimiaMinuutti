@@ -8,6 +8,8 @@ public class GameStateManager : MonoBehaviour {
 
     public GameState state;
 
+    [SerializeField] private AudioSource audiosource;
+
     public int winnerPlayerIndex = -1;
 
     public enum GameState {
@@ -22,7 +24,7 @@ public class GameStateManager : MonoBehaviour {
 
         state = GameState.starting;
 
-        Invoke("BeginGame", 1);
+        Invoke("BeginGame", 2);
     }
 
     private void BeginGame() {

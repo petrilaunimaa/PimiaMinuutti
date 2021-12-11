@@ -14,7 +14,27 @@ public class PlayerScript : MonoBehaviour
     public GameObject gunpoint;
 
     public GameStateManager gameState;
+    public SpriteRenderer sr;
 
+    private void Start() {
+        StartCoroutine(TeleportAnimationCoroutine());
+    }
+
+    private IEnumerator TeleportAnimationCoroutine() {
+        for (int i=0; i<10; ++i) {
+            sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 0);
+            yield return new WaitForSeconds(.05f);
+            sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, .5f);
+            yield return new WaitForSeconds(.05f);
+        }
+        for (int i=0; i<5; ++i) {
+            sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 0);
+            yield return new WaitForSeconds(.1f);
+            sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 1);
+            yield return new WaitForSeconds(.1f);
+        }
+        sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 1);
+    }
 
     // Movement force
     void Movement(float horInput, float verInput)
