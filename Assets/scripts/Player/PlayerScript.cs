@@ -19,6 +19,8 @@ public class PlayerScript : MonoBehaviour
     private float bulletCooldown = 0f;
     [SerializeField] private float bulletMaxCooldown = 0.5f;
 
+    [SerializeField] private ParticleSystem sparkParticlePrefab = null;
+
     private void Start() {
         StartCoroutine(TeleportAnimationCoroutine());
     }
@@ -113,6 +115,8 @@ public class PlayerScript : MonoBehaviour
         if (collision.gameObject.tag == "bullet") {
             shake(0.05f);
             gameState.swapTimerToPlayerIndex(playerid);
+            ParticleSystem sparks = Instantiate<ParticleSystem>(sparkParticlePrefab);
+            sparks.transform.position = transform.position;
         }
     }
 }

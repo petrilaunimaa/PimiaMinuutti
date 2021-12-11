@@ -114,6 +114,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8c7e06bde54817b4eb2c9f7dd4d156f1, type: 3}
   - {fileID: 8300000, guid: 060313eb83cefb54fb997a30324059fe, type: 3}
   gunpoint: {fileID: 6115563644715471381}
+  gameState: {fileID: 0}
+  sr: {fileID: 0}
+  bulletMaxCooldown: 0.5
+  sparkParticlePrefab: {fileID: 3060391661364880804, guid: 5c244eaf18aff4ece855a1f515a4380e, type: 3}
 --- !u!50 &7992296627065559414
 Rigidbody2D:
   serializedVersion: 4
