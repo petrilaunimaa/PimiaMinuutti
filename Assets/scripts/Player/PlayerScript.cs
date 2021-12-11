@@ -8,17 +8,17 @@ public class PlayerScript : MonoBehaviour
     public float movementSpeed = 15.0f;
     public camerashake camerashakeOBJ;
     public int playerid = 1;
+    public GameObject bullet;
+    public AudioSource audiosource;
+    public AudioClip[] shootingsounds;
+    public GameObject gunpoint;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Movement force
     void Movement(float horInput, float verInput)
     {
         Vector3 heading = new Vector3(horInput, verInput, 0);
+        heading.Normalize();
         m_Rigidbody2D.AddForce((heading * Time.deltaTime) * movementSpeed, ForceMode2D.Impulse);
 
         // debug ray
@@ -32,28 +32,58 @@ public class PlayerScript : MonoBehaviour
     // Update
     void Update()
     {
-
-
         if (playerid == 1)
         {
             float horInput = Input.GetAxis("WASDHorizontal");
             float verInput = Input.GetAxis("WASDVertical");
             if (horInput != 0 || verInput != 0)
+            {
                 Movement(horInput, verInput);
+            }
+            if (Input.GetKeyDown("e"))
+            {
+                shoot();
+            }
         }
         if (playerid == 2)
         {
             float horInput = Input.GetAxis("ArrowHorizontal");
             float verInput = Input.GetAxis("ArrowVertical");
             if (horInput != 0 || verInput != 0)
+            {
                 Movement(horInput, verInput);
+            }
+            if (Input.GetKeyDown("-"))
+            {
+                shoot();
+            }
+
         }
+
     }
 
+    private void shoot()
+    {
+        shake(0.05f);
 
+        audiosource.Stop();
+        audiosource.PlayOneShot(shootingsounds[Random.Range(0, shootingsounds.Length)], 0.2f);
+
+        GameObject spawnedBullet = Instantiate(bullet);
+        spawnedBullet.transform.position = gunpoint.transform.position;
+        //spawnedBullet.GetComponent<Rigidbody2D>().AddForce((heading) * 9000, ForceMode2D.Impulse);
+        Debug.Log(transform.right);
+        spawnedBullet.GetComponent<Rigidbody2D>().AddForce((transform.right) / 10, ForceMode2D.Force);
+
+    }
+
+    private void shake(float magnitude)
+    {
+        StartCoroutine(camerashakeOBJ.CameraShake(magnitude));
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        StartCoroutine(camerashakeOBJ.CameraShake(0.05f));
+        shake(0.05f);
     }
 }
