@@ -16,6 +16,9 @@ public class PlayerScript : MonoBehaviour
     public GameStateManager gameState;
     public SpriteRenderer sr;
 
+    private float bulletCooldown = 0f;
+    [SerializeField] private float bulletMaxCooldown = 0.5f;
+
     private void Start() {
         StartCoroutine(TeleportAnimationCoroutine());
     }
@@ -76,24 +79,29 @@ public class PlayerScript : MonoBehaviour
                 }
 
             }
+
+            bulletCooldown -= Time.deltaTime;
         }
 
     }
 
     private void shoot()
     {
-        shake(0.05f);
+        int activePlayer = gameState.ActivePlayerIndex();
+        if (bulletCooldown <= float.Epsilon && (activePlayer == playerid || activePlayer == -1)) {
+            bulletCooldown = bulletMaxCooldown;
+            shake(0.05f);
 
-        audiosource.Stop();
-        audiosource.PlayOneShot(shootingsounds[Random.Range(0, shootingsounds.Length)], 0.2f);
+            audiosource.Stop();
+            audiosource.PlayOneShot(shootingsounds[Random.Range(0, shootingsounds.Length)], 0.2f);
 
-        GameObject spawnedBullet = Instantiate(bullet);
-        spawnedBullet.transform.position = gunpoint.transform.position;
-        //spawnedBullet.GetComponent<Rigidbody2D>().AddForce((heading) * 9000, ForceMode2D.Impulse);
-        Debug.Log(transform.right);
-        spawnedBullet.GetComponent<Rigidbody2D>().AddForce((transform.right) / 10, ForceMode2D.Force);
-        spawnedBullet.GetComponent<SpriteRenderer>().color = gameObject.GetComponent<SpriteRenderer>().color;
-
+            GameObject spawnedBullet = Instantiate(bullet);
+            spawnedBullet.transform.position = gunpoint.transform.position;
+            //spawnedBullet.GetComponent<Rigidbody2D>().AddForce((heading) * 9000, ForceMode2D.Impulse);
+            Debug.Log(transform.right);
+            spawnedBullet.GetComponent<Rigidbody2D>().AddForce((transform.right) / 10, ForceMode2D.Force);
+            spawnedBullet.GetComponent<SpriteRenderer>().color = gameObject.GetComponent<SpriteRenderer>().color;
+        }
     }
 
     private void shake(float magnitude)

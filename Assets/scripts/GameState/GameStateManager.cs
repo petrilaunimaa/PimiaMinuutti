@@ -62,4 +62,14 @@ public class GameStateManager : MonoBehaviour {
         player1Timer.active = playerIndex == 1;
         player2Timer.active = playerIndex == 2;
     }
+
+    public int ActivePlayerIndex() {
+        if (player1Timer.active) {
+            return 1;
+        } else if (player2Timer.active) {
+            return 2;
+        } else {
+            return -1;
+        }
+    }
 }
