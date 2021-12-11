@@ -802,6 +802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player2
       objectReference: {fileID: 0}
+    - target: {fileID: 2002429145319890002, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: Priority
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: playerid
       value: 2
@@ -810,6 +814,26 @@ PrefabInstance:
       propertyPath: camerashakeOBJ
       value: 
       objectReference: {fileID: 80393767}
+    - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: shootingsounds.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: shootingsounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: f6a3d57e1d70d2a4da7cd512fb9ada90, type: 3}
+    - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: shootingsounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c7c1ada7c9dbcf44b90920469d0b51f, type: 3}
+    - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: shootingsounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8c7e06bde54817b4eb2c9f7dd4d156f1, type: 3}
+    - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: shootingsounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 060313eb83cefb54fb997a30324059fe, type: 3}
     - target: {fileID: 7613399653538995534, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: m_RootOrder
       value: 6
