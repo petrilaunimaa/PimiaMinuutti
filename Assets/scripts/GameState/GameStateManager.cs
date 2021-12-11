@@ -38,6 +38,10 @@ public class GameStateManager : MonoBehaviour {
             winnerPlayerIndex = player1Timer.time <= 0 ? 1 : 2;
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+
+        }
+
     }
 
 

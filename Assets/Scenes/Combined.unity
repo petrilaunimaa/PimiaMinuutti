@@ -134,6 +134,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 983e6d1712fb14f5ba38213ab359efcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!212 &123385704 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3443248748257484482, guid: 029ab70039da345588333e06362f7986, type: 3}
+  m_PrefabInstance: {fileID: 2125985232}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &893505196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -261,6 +266,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1268303303 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3443248748257484482, guid: 029ab70039da345588333e06362f7986, type: 3}
+  m_PrefabInstance: {fileID: 1489491402}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1310966228
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,6 +747,10 @@ PrefabInstance:
       value: Player1
       objectReference: {fileID: 0}
     - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: sr
+      value: 
+      objectReference: {fileID: 1268303303}
+    - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: gameState
       value: 
       objectReference: {fileID: 1471771298}
@@ -1001,6 +1015,10 @@ PrefabInstance:
       propertyPath: Priority
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: sr
+      value: 
+      objectReference: {fileID: 123385704}
     - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: playerid
       value: 2
