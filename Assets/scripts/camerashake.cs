@@ -6,10 +6,9 @@ public class camerashake : MonoBehaviour
 {
     public Vector3 offset;
     public float duration = 1.0f;
-    public float magnitude = 1.0f;
 
     // Juice generator
-    public IEnumerator CameraShake()
+    public IEnumerator CameraShake(float magnitude)
     {
         Vector3 originalPos = offset;
         float elapsed = 0.0f;

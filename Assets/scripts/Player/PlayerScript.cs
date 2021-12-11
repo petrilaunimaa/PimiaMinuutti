@@ -54,6 +54,6 @@ public class PlayerScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        StartCoroutine(camerashakeOBJ.CameraShake());
+        StartCoroutine(camerashakeOBJ.CameraShake(0.05f));
     }
 }
