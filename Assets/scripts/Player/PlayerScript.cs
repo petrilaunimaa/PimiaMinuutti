@@ -20,6 +20,13 @@ public class PlayerScript : MonoBehaviour
     {
         Vector3 heading = new Vector3(horInput, verInput, 0);
         m_Rigidbody2D.AddForce((heading * Time.deltaTime) * movementSpeed, ForceMode2D.Impulse);
+
+        // debug ray
+        Debug.DrawRay(transform.position, heading, Color.red);
+
+        float rotationZ = Mathf.Atan2(heading.y, heading.x) * Mathf.Rad2Deg;
+        Quaternion targetedRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
+        transform.rotation = Quaternion.Lerp(transform.rotation, targetedRotation, 25.0f * Time.deltaTime);
     }
 
     // Update
@@ -31,13 +38,15 @@ public class PlayerScript : MonoBehaviour
         {
             float horInput = Input.GetAxis("WASDHorizontal");
             float verInput = Input.GetAxis("WASDVertical");
-            Movement(horInput, verInput);
+            if (horInput != 0 || verInput != 0)
+                Movement(horInput, verInput);
         }
         if (playerid == 2)
         {
             float horInput = Input.GetAxis("ArrowHorizontal");
             float verInput = Input.GetAxis("ArrowVertical");
-            Movement(horInput, verInput);
+            if (horInput != 0 || verInput != 0)
+                Movement(horInput, verInput);
         }
     }
 
