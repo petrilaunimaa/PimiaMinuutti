@@ -891,13 +891,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1471771298}
     - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: bulletColor.b
+      value: 0.12459949
+      objectReference: {fileID: 0}
+    - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: bulletColor.g
+      value: 0.754717
+      objectReference: {fileID: 0}
+    - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: bulletColor.r
+      value: 0.13792391
+      objectReference: {fileID: 0}
+    - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: camerashakeOBJ
       value: 
       objectReference: {fileID: 80393767}
     - target: {fileID: 3443248748257484482, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -757630189579833598, guid: b3a9d76173f2a4b28b5004ce08fe2b87, type: 3}
+      objectReference: {fileID: -8455040856386837255, guid: 6415259006810409bbe76c5afa90c455, type: 3}
     - target: {fileID: 3443248748257484482, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -910,6 +922,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6398890975078100216, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 39e8f0106cead475799e857d72b7cd79, type: 2}
     - target: {fileID: 7613399653538995534, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1175,6 +1191,18 @@ PrefabInstance:
       propertyPath: gameState
       value: 
       objectReference: {fileID: 1471771298}
+    - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: bulletColor.b
+      value: 0.44495374
+      objectReference: {fileID: 0}
+    - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: bulletColor.g
+      value: 0.44495374
+      objectReference: {fileID: 0}
+    - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
+      propertyPath: bulletColor.r
+      value: 0.9339623
+      objectReference: {fileID: 0}
     - target: {fileID: 3134011223011974265, guid: 029ab70039da345588333e06362f7986, type: 3}
       propertyPath: camerashakeOBJ
       value: 
