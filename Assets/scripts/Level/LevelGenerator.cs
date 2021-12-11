@@ -25,10 +25,10 @@ public class LevelGenerator : MonoBehaviour {
         Instantiate<GameObject>(currentLevel.floorSpritePrefab, null);
 
         for (int i=0; i<wallCount; ++i) {
-            Wall wallPrefab = currentLevel.walls[Random.Range(0, currentLevel.walls.Count)];
+            GameObject wallPrefab = currentLevel.walls[Random.Range(0, currentLevel.walls.Count)];
             int positionIndex = Random.Range(0, unusedPositions.Count);
             Vector3 position = unusedPositions[positionIndex].transform.position;
-            Wall wallObject = Object.Instantiate<Wall>(wallPrefab, null);
+            GameObject wallObject = Object.Instantiate<GameObject>(wallPrefab, null);
             wallObject.transform.position = position;
             unusedPositions.RemoveAt(positionIndex);
         }

@@ -1,0 +1,225 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8336395293952094549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5822026876235097811}
+  m_Layer: 0
+  m_Name: WildWestTableWithStools
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5822026876235097811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8336395293952094549}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.7300541, y: 0.108101204, z: -3.1058223}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6727007862444608855}
+  - {fileID: 5654837373946948808}
+  - {fileID: 667230502582314977}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &119989963650423572
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5822026876235097811}
+    m_Modifications:
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.797
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.122
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6150963073182315888, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_Name
+      value: WildWestStool1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+--- !u!4 &5654837373946948808 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+  m_PrefabInstance: {fileID: 119989963650423572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5085184132295839805
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5822026876235097811}
+    m_Modifications:
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.652
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.1058223
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6150963073182315888, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_Name
+      value: WildWestStool1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342275631605356355, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+--- !u!4 &667230502582314977 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5751183164652074972, guid: 0e7e5bfdad310455096eb9aa08248fa7, type: 3}
+  m_PrefabInstance: {fileID: 5085184132295839805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8459385985027615416
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5822026876235097811}
+    m_Modifications:
+    - target: {fileID: 2900006696333633519, guid: dfdaa5ff087574203b0313540eda1022, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900006696333633519, guid: dfdaa5ff087574203b0313540eda1022, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900006696333633519, guid: dfdaa5ff087574203b0313540eda1022, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900006696333633519, guid: dfdaa5ff087574203b0313540eda1022, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900006696333633519, guid: dfdaa5ff087574203b0313540eda1022, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900006696333633519, guid: dfdaa5ff087574203b0313540eda1022, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900006696333633519, guid: dfdaa5ff087574203b0313540eda1022, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900006696333633519, guid: dfdaa5ff087574203b0313540eda1022, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900006696333633519, guid: dfdaa5ff087574203b0313540eda1022, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900006696333633519, guid: dfdaa5ff087574203b0313540eda1022, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900006696333633519, guid: dfdaa5ff087574203b0313540eda1022, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844367101804434272, guid: dfdaa5ff087574203b0313540eda1022, type: 3}
+      propertyPath: m_Name
+      value: PokerTableWall
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dfdaa5ff087574203b0313540eda1022, type: 3}
+--- !u!4 &6727007862444608855 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2900006696333633519, guid: dfdaa5ff087574203b0313540eda1022, type: 3}
+  m_PrefabInstance: {fileID: 8459385985027615416}
+  m_PrefabAsset: {fileID: 0}

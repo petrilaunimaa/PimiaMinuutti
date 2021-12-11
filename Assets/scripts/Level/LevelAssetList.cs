@@ -9,7 +9,7 @@ public class LevelAssetList : MonoBehaviour {
     public int wallCountMin;
     public int wallCountMax;
 
-    public List<Wall> walls;
+    public List<GameObject> walls;
     public List<GameObject> decorations;
 
     public GameObject floorSpritePrefab;
