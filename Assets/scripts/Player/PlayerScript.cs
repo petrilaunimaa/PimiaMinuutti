@@ -61,7 +61,7 @@ public class PlayerScript : MonoBehaviour
     // Update
     void Update()
     {
-        if (gameState.state == GameStateManager.GameState.ongoing) {
+        if (gameState.state != GameStateManager.GameState.ended) {
             if (playerid == 1) {
                 float horInput = Input.GetAxis("WASDHorizontal");
                 float verInput = Input.GetAxis("WASDVertical");

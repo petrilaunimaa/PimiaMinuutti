@@ -27,7 +27,11 @@ public class UIGameOverScreen : MonoBehaviour {
             cg.interactable = true;
             cg.alpha = 1;
 
-            winnerLabel.text = "Pelaaja #" + gameState.winnerPlayerIndex;
+            if (gameState.winnerPlayerIndex == 1) {
+                winnerLabel.text = "Pinkki voitti";
+            } else if (gameState.winnerPlayerIndex == 2) {
+                winnerLabel.text = "Vihreä voitti";
+            }
         }
 
     }
