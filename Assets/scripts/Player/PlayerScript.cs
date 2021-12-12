@@ -76,7 +76,7 @@ public class PlayerScript : MonoBehaviour
                 if (horInput != 0 || verInput != 0) {
                     Movement(horInput, verInput);
                 }
-                if (Input.GetKeyDown("e")) {
+                if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E)) {
                     shoot();
                 }
             }
@@ -86,7 +86,7 @@ public class PlayerScript : MonoBehaviour
                 if (horInput != 0 || verInput != 0) {
                     Movement(horInput, verInput);
                 }
-                if (Input.GetKeyDown("-")) {
+                if (Input.GetKeyDown(KeyCode.RightShift) || Input.GetKeyDown(KeyCode.Minus)) {
                     shoot();
                 }
 
