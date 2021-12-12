@@ -19,7 +19,6 @@ public class GameStateManager : MonoBehaviour {
     [SerializeField] private AudioSource zapAudio;
 
     [SerializeField] private AudioSource victoryMusic;
-    [SerializeField] private AudioSource gameMusic;
 
     [SerializeField] private AudioSource player1Music;
     [SerializeField] private AudioSource player2Music;
