@@ -20,6 +20,10 @@ public class GameStateManager : MonoBehaviour {
 
     [SerializeField] private AudioSource victoryMusic;
 
+    [SerializeField] private AudioSource player1Music;
+    [SerializeField] private AudioSource player2Music;
+    private bool timerMusicPlaying = false;
+
     private float escapePressedTime = 0;
 
     public int winnerPlayerIndex = -1;
@@ -74,13 +78,23 @@ public class GameStateManager : MonoBehaviour {
         player1Timer.active = playerIndex == 1;
         player2Timer.active = playerIndex == 2;
 
+        if (timerMusicPlaying == false) {
+            timerMusicPlaying = true;
+            player1Music.Play();
+            player2Music.Play();
+        }
+
         if (playerIndex == 1) {
             ParticleSystem sparks = Instantiate<ParticleSystem>(player1ParticlesPrefab);
             sparks.transform.position = player1SparkNode.transform.position;
+            player1Music.volume = 0;
+            player2Music.volume = 1;
             zapAudio.Play();
         } else if (playerIndex == 2) {
             ParticleSystem sparks = Instantiate<ParticleSystem>(player2ParticlesPrefab);
             sparks.transform.position = player2SparkNode.transform.position;
+            player1Music.volume = 1;
+            player2Music.volume = 0;
             zapAudio.Play();
         }
     }
