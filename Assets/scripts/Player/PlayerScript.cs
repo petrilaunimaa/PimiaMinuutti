@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -23,8 +24,18 @@ public class PlayerScript : MonoBehaviour
 
     [SerializeField] private ParticleSystem sparkParticlePrefab = null;
 
+    public PostProcessVolume ppvolume;
+    private ChromaticAberration chromaticAb;
+    private LensDistortion lensdist;
+
     private void Start() {
         StartCoroutine(TeleportAnimationCoroutine());
+
+        // initialize chromatic aberration
+        ppvolume.profile.TryGetSettings(out chromaticAb);
+        ppvolume.profile.TryGetSettings(out lensdist);
+        chromaticAb.intensity.value = 0.13f;
+        lensdist.intensity.value = 21.1f;
     }
 
     private IEnumerator TeleportAnimationCoroutine() {
@@ -49,9 +60,6 @@ public class PlayerScript : MonoBehaviour
         Vector3 heading = new Vector3(horInput, verInput, 0);
         heading.Normalize();
         m_Rigidbody2D.AddForce((heading * Time.deltaTime) * movementSpeed, ForceMode2D.Impulse);
-
-        // debug ray
-        Debug.DrawRay(transform.position, heading, Color.red);
 
         float rotationZ = Mathf.Atan2(heading.y, heading.x) * Mathf.Rad2Deg;
         Quaternion targetedRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
@@ -87,6 +95,11 @@ public class PlayerScript : MonoBehaviour
             bulletCooldown -= Time.deltaTime;
         }
 
+        // Fade chromatic aberration to 0.13
+        chromaticAb.intensity.value = Mathf.Lerp(chromaticAb.intensity.value, 0.13f, 2f * Time.deltaTime);
+
+        // Fade lens distortion to 21.1
+        lensdist.intensity.value = Mathf.Lerp(lensdist.intensity.value, 21.1f, 2f * Time.deltaTime);
     }
 
     private void shoot()
@@ -96,13 +109,14 @@ public class PlayerScript : MonoBehaviour
             bulletCooldown = bulletMaxCooldown;
             shake(0.05f);
 
+            chromaticAb.intensity.value = 0.5f;
+            lensdist.intensity.value = 19f;
+
             audiosource.Stop();
             audiosource.PlayOneShot(shootingsounds[Random.Range(0, shootingsounds.Length)], 0.2f);
 
             GameObject spawnedBullet = Instantiate(bullet);
             spawnedBullet.transform.position = gunpoint.transform.position;
-            //spawnedBullet.GetComponent<Rigidbody2D>().AddForce((heading) * 9000, ForceMode2D.Impulse);
-            Debug.Log(transform.right);
             spawnedBullet.GetComponent<Rigidbody2D>().AddForce((transform.right) / 10, ForceMode2D.Force);
             spawnedBullet.GetComponent<SpriteRenderer>().color = new Color(bulletColor.r, bulletColor.g, bulletColor.b, 1);
         }

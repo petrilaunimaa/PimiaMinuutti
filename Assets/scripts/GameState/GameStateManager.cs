@@ -19,6 +19,7 @@ public class GameStateManager : MonoBehaviour {
     [SerializeField] private AudioSource zapAudio;
 
     [SerializeField] private AudioSource victoryMusic;
+    [SerializeField] private AudioSource gameMusic;
 
     private float escapePressedTime = 0;
 
@@ -49,7 +50,17 @@ public class GameStateManager : MonoBehaviour {
             state = GameState.ended;
             winnerPlayerIndex = player1Timer.time <= 0 ? 1 : 2;
             if (victoryMusic.isPlaying == false) {
+                gameMusic.Stop();
                 victoryMusic.Play();
+            }
+        }
+        if (player1Timer.time < 60f || player2Timer.time < 60f)
+        {
+            if (state != GameState.ended) { 
+                if (gameMusic.isPlaying == false)
+                {
+                    gameMusic.Play();
+                }
             }
         }
 
