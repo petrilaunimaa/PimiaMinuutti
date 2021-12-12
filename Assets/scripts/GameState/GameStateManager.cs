@@ -7,8 +7,11 @@ public class GameStateManager : MonoBehaviour {
     private HitpointTimer player1Timer;
     private HitpointTimer player2Timer;
 
-    [SerializeField] ParticleSystem player1Particles;
-    [SerializeField] ParticleSystem player2Particles;
+    [SerializeField] ParticleSystem player1ParticlesPrefab;
+    [SerializeField] ParticleSystem player2ParticlesPrefab;
+
+    [SerializeField] GameObject player1SparkNode;
+    [SerializeField] GameObject player2SparkNode;
 
     public GameState state;
 
@@ -32,9 +35,6 @@ public class GameStateManager : MonoBehaviour {
         player2Timer = timers[1];
 
         state = GameState.starting;
-
-        player1Particles.Stop();
-        player2Particles.Stop();
 
         Invoke("BeginGame", 2);
     }
@@ -75,15 +75,13 @@ public class GameStateManager : MonoBehaviour {
         player2Timer.active = playerIndex == 2;
 
         if (playerIndex == 1) {
-            if (player1Particles.isPlaying == false) {
-                player1Particles.Play();
-                zapAudio.Play();
-            }
+            ParticleSystem sparks = Instantiate<ParticleSystem>(player1ParticlesPrefab);
+            sparks.transform.position = player1SparkNode.transform.position;
+            zapAudio.Play();
         } else if (playerIndex == 2) {
-            if (player2Particles.isPlaying == false) {
-                player2Particles.Play();
-                zapAudio.Play();
-            }
+            ParticleSystem sparks = Instantiate<ParticleSystem>(player2ParticlesPrefab);
+            sparks.transform.position = player2SparkNode.transform.position;
+            zapAudio.Play();
         }
     }
 
