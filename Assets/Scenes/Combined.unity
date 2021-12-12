@@ -1070,6 +1070,10 @@ PrefabInstance:
       value: HitpointtimerP1
       objectReference: {fileID: 0}
     - target: {fileID: 342167762882522461, guid: 5949e99d2b19d4d81ad0d06eac3b107c, type: 3}
+      propertyPath: time
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 342167762882522461, guid: 5949e99d2b19d4d81ad0d06eac3b107c, type: 3}
       propertyPath: active
       value: 0
       objectReference: {fileID: 0}

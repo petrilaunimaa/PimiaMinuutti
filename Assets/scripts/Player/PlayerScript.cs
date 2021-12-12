@@ -19,6 +19,8 @@ public class PlayerScript : MonoBehaviour
     public GameStateManager gameState;
     public SpriteRenderer sr;
 
+    private bool startedEndAnimation = false;
+
     private float bulletCooldown = 0f;
     [SerializeField] private float bulletMaxCooldown = 0.5f;
 
@@ -52,6 +54,40 @@ public class PlayerScript : MonoBehaviour
             yield return new WaitForSeconds(.1f);
         }
         sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 1);
+    }
+
+    private IEnumerator LoseAnimationCoroutine() {
+        for (int i = 0; i < 5; ++i) {
+            sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 0);
+            yield return new WaitForSeconds(.1f);
+            sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 1);
+            yield return new WaitForSeconds(.1f);
+        }
+        for (int i = 0; i < 10; ++i) {
+            sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 0);
+            yield return new WaitForSeconds(.05f);
+            sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, .5f);
+            yield return new WaitForSeconds(.05f);
+        }
+        sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 0);
+    }
+
+    private IEnumerator WinAnimationCoroutine() {
+
+        float startTime = Time.time;
+
+        while (true) {
+
+            float deltaTime = Time.time - startTime;
+            float size = 1+ ((Mathf.Sin(deltaTime)+1) * 0.25f);
+
+            transform.localScale = new Vector3(size, size, 1);
+
+            yield return null;
+
+        }
+
+
     }
 
     // Movement force
@@ -93,6 +129,14 @@ public class PlayerScript : MonoBehaviour
             }
 
             bulletCooldown -= Time.deltaTime;
+        }
+        if (gameState.state == GameStateManager.GameState.ended && startedEndAnimation == false) {
+            startedEndAnimation = true;
+            if (gameState.winnerPlayerIndex != playerid) {
+                StartCoroutine(WinAnimationCoroutine());
+            } else {
+                StartCoroutine(LoseAnimationCoroutine());
+            }
         }
 
         // Fade chromatic aberration to 0.13
